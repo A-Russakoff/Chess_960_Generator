@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>Trial By Fire</title>
+    <link rel="stylesheet" href="main.css"> 
+</head>
+<body class="dark-theme">
+    <h1>Hello World!</h1>
+    <p id="msg">Generate Chess 960 Board:</p>
+    
+    
+    <div>
+        <canvas 
+        id="chess960" 
+        width="400px" 
+        height="400px" 
+        style="border:3px solid #000000;">
+        </canvas> 
+        
+    </div>
+
+    <div>
+        <button class="btn2"> New Position </button>
+        <button class="flip"> Flip Board </button>
+    </div>
+       
+    <script src="app.js"></script>
+    <noscript>No JavaScript boii. Enable JavaScript boiii.</noscript>
+
+
+    <p>
+        <br>
+        This is a demonstration of HTML5, CSS, & JavaScript. 
+        It features a non-trivial JavaScript application and 
+        utilizes some of the following features:<br><br>
+        Basic HTML, CSS, and JavaScript Syntax.<br>
+        Mode 'use strict' in JavaScript.<br>
+        Linking between .html, .css, and .js files.<br>
+        Elementary styling with CSS.<br>
+        Basic functions in JavaScript.<br>
+        Buttons and event handlers.<br>
+        Use of HTML5 Canvas with javascript.<br>
+        Loading an array of .jpg and .png images,
+        waiting for the image array to load before enabling 
+        the program's draw features.(This was tricky and interesting, 
+        and I'm certain I will change the implementation
+        in the near future.)<br>
+        <br>
+        Some more information about the application:<br
+        ><br>
+        In broad strokes, the application generates a new position by generating 
+        5 random numbers.<br> 
+        <br>
+        1/4 for the Light-Squared Bishop. <br>
+        1/4 for the Dark-Squared Bishop. <br>
+        1/6 for the Queen.<br>
+        1/5 for one of the Knights &<br>
+        1/4 for the other.<br>
+        <br>
+        The Rooks and King are then placed sequentially, first Rook, then King, 
+        then Rook, in the remaining three squares. <br>
+        <br>
+        Positions are stored in a simple linear array.
+        A function is required that is designed to ignore positions that have
+        already been used as it searches for the square that corresponds to
+        the random number used to place the piece. 
+        Once the board-position is generated, a simple 'switch case' object is used
+        to draw the pieces on the canvas to the correct squares. The individual
+        positions (squares) of the black and white pieces are always mirror 
+        images of each other, so once we have the board-position for one color, we
+        get the other for free. The application simply paints the pieces
+        over the background image (the board) in pairs with the a corresponding
+        offset. <br>
+        <br>
+        Currently the JavaScript application is roughly 150 lines of code, including 
+        handling all of the graphic objects and the event handlers for the buttons.<br>
+        <br>
+        Thoughts:<br>
+        <br>
+        This is my first attempt at creating an application for an HTML page. I 
+        am confident I have made some very strange or unconventional code 
+        decisions, and that I'm misusing and abusing terminology related to 
+        the languages used here. That being said, I feel as though I learned
+        a lot about how these lanuages (HTML, CSS, JavaScript) link together,
+        and what their individual intended functions are.   <br>
+        <br>
+
+        To-Do:<br>
+        -re-implement change theme buttons<br>
+        -attach graphics to linked public domain graphics<br>
+        
+
+                
+
+        <br><br><br>
+
+      </p>
+</body>
+</html>
