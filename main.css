@@ -1,0 +1,84 @@
+:root {
+    --green: #00ff00;
+    --forest: #174617a9;
+    --white: #ffffff;
+    --black: #000000;
+    --purple:   #910fe7;
+    --pink: #f88ec3;
+    --blue: #021aee;
+    --orange: #ff9900c9;
+}
+* {
+    color: var(--fontColor);
+    font-family: monospace;
+  }
+  body {
+      background: var(--bg);
+  }
+ul {font-family: monospace;}
+li{list-style: circle;}
+.list{
+    list-style: square;
+        }
+.light-theme {
+    --bg: var(--green);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+  }
+.dark-theme{
+    --bg: var(--black);
+    --fontColor: var(--green);
+    --btnBg: var(--forest);
+    --btnFontColor: var(--green);
+}
+.vapor-wave{
+    --bg: var(--purple);
+    --fontColor: var(--blue);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+}
+.reverse-wave{
+    --bg: var(--blue);
+    --fontColor: var(--pink);
+    --btnBg: var(--green);
+    --btnFontColor: var(--purple);
+}
+.btn2{
+    position: relative;
+    top: 12px;
+    height: 50px;
+    width: 100px;
+    border: 5px, #000000;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+    }
+.flip{
+    position: relative;
+    top: 12px;
+    left: 200px;
+    height: 50px;
+    width: 100px;
+    border: 5px, #000000;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+.btn{
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+    }
+.btn:focus{outline-style: none;}
+
+
+
+
+
+
+
